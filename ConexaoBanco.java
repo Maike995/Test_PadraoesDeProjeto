@@ -5,15 +5,13 @@ public class ConexaoBanco{
 private Connection conexao;
 private String nomeBanco;
 private String senhaBanco;
-private int ipv4;
-private String ipv6;
   
 private static ConexaoBanco isntancia;
   
 private ConexaoBanco(){
 
 }
-  
+
   public static synchronized ConexaoBanco getInstance(){
     if(isntancia == null){
       isntancia = new ConexaoBanco();
