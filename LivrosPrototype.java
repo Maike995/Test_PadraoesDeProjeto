@@ -27,7 +27,7 @@ public void setDedicatoria(String dedicatoria){
 
 public abstract void imprimir();
 	
-public abstract LivrosPrototype clonar();
+public abstract LivrosPrototype clonar(String livro);
 
   
 }

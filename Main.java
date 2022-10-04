@@ -2,19 +2,17 @@ class Main {
   public static void main(String[] args) {
     System.out.println("");
 
-    LivroDeRedes livroPrototype01 = new LivroDeRedes ();
-		LivroDeRedes livroDeRede01 =  livroPrototype01.clonar();
-		livroDeRede01.setDedicatoria("Michael");
-		livroDeRede01.imprimir();
-    LivroDeRedes livroDeRede02 =  livroPrototype01.clonar();
-    livroDeRede02.setDedicatoria("Ricardo");
-		livroDeRede02.imprimir();
-
-    LivroDePadroes livroPrototype02 = new LivroDePadroes ();
-		LivroDePadroes LivroDePadroes01 =  livroPrototype02.clonar();
+    Livro livroPrototype = new Livro ();
+		Livro livroDeRedes01 =  livroPrototype.clonar("RedesDeComputadores");
+		livroDeRedes01.setDedicatoria("Michael");
+		livroDeRedes01.imprimir();
+    Livro livroDeRedes02 =  livroPrototype.clonar("RedesDeComputadores");
+    livroDeRedes02.setDedicatoria("Ricardo");
+		livroDeRedes02.imprimir();
+		Livro LivroDePadroes01 = livroPrototype.clonar("PadrõesDeProjeto");
 		LivroDePadroes01.setDedicatoria("Jean");
 		LivroDePadroes01.imprimir();
-    LivroDePadroes LivroDePadroes02 =  livroPrototype02.clonar();
+    Livro LivroDePadroes02 =  livroPrototype.clonar("PadrõesDeProjeto");
     LivroDePadroes02.setDedicatoria("Wily");
 		LivroDePadroes02.imprimir();
   }
