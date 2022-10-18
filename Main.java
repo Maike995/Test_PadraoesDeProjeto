@@ -1,23 +1,18 @@
+class Main {
+  public static void main(String[] args) {
+    System.out.println("");
 
 
-public class Main {
+    
+    App Test = App.getInstance() ;
+		App TestApp01 =  Test.clonar();
+    TestApp01.setCriador("Michael");
+		TestApp01.setJdkUtilizado("Flutter");
+		TestApp01.imprimir();
+    App TestApp02 =  Test.clonar();
+    TestApp02.setCriador("Ricardo");
+    TestApp02.setJdkUtilizado("React Native");
+		TestApp02.imprimir();
 
-	public static void main(String[] args) {
-		Nasa concessionaria = new Nasa(new fogueteModelo1());
-
-		concessionaria.construirFoguete();
-		FogueteProduct foguete = concessionaria.getFug();
-		System.out.println("Foguete: " + foguete.modelo + "/" + foguete.montadora
-		+ "\nQuantidade de Motores: " + foguete.quantDeMotores + "\nNumero de assentos: " + foguete.numeroassentos + "\nMotor: "
-		+ foguete.tipoMotor + "\nValor: R$ " + foguete.preco);
-		System.out.println();
-
-		concessionaria = new Nasa (new fogueteModelo2());
-		concessionaria.construirFoguete();
-		foguete = concessionaria.getFug();
-		System.out.println("Foguete: " + foguete.modelo + "/" + foguete.montadora
-		+ "\nQuantidade de Motores: " + foguete.quantDeMotores + "\nNumero de assentos: " + foguete.numeroassentos + "\nMotor: "
-		+ foguete.tipoMotor + "\nValor: R$ " + foguete.preco);
-
-		}
-	}
+  }
+}
