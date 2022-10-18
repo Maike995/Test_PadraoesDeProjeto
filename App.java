@@ -8,9 +8,8 @@ public class App extends AppPrototype{
    
   this.anoDeEstreia = 2022;
   this.versaoAtual="Windows 10";
-  this.jdkUtilizado = getCriador();
+  this.criador = getCriador();
   this.jdkUtilizado = getJdkUtilizado();
-  this.jdkUtilizado = getCriador();
    
   }
 
@@ -18,7 +17,7 @@ public void imprimir() {
 		
 		System.out.println("O App de " + getCriador() + " fabricado em "
                        + this.anoDeEstreia+" feito inteiramente no "
-                       + getJdkUtilizado() + " funcionando na verção do " 
+                       + getJdkUtilizado() + " funcionando na versão do " 
                        + this.versaoAtual );
 	
 	}
